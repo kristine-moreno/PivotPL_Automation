@@ -5,7 +5,7 @@ export const sstSurveyPO = {
     sstLabel:'.fzaoYV',
     sstSubLabel:'.fwlSGW',
     surveyID:'#surveyId',
-    studentID:'#username',
+    studentID:'#student-id',
     sstLoginBtn:'.MuiButton-label',
 
     //Onboarding Elements
