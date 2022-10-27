@@ -4,7 +4,8 @@ export const sstSurveyPO = {
     pivotLogo: 'img',
     sstLabel:'.fzaoYV',
     sstSubLabel:'.fwlSGW',
-    surveyID:'#surveyId',
+    sstTalkLabel:'[class="sc-mfv47r-0 hLgsZj"]',
+    surveyID:'#survey-id',
     studentID:'#student-id',
     sstLoginBtn:'.MuiButton-label',
 
