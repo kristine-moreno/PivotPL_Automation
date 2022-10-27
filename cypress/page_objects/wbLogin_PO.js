@@ -4,8 +4,8 @@ export const wbloginPO = {
     pivotLogo: 'img',
     wbLabel:'.fzaoYV',
     wbSubLabel:'.fwlSGW',
-    surveyID:'#surveyId',
-    studentID:'#username',
+    surveyID:'#survey-id',
+    studentID:'#student-id',
     wbLoginBtn:'.MuiButton-label',
 
     //Onboarding Elements
