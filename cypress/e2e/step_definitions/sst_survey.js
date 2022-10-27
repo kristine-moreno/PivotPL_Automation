@@ -30,18 +30,23 @@ When('I login my valid survey id and student id', () => {
             cy.get(sstSurveyPO.subtext,{timeout:5000}).should('be.visible');
             cy.get(sstSurveyPO.imgSlides,{timeout:5000}).should('be.visible');
             cy.get(sstSurveyPO.sliderRightArrow,{timeout:10000}).trigger("click")
-            cy.get(sstSurveyPO.imgSlides,{timeout:5000}).should('be.visible');
+            cy.get(sstSurveyPO.imgSlides,{timeout:5000}).should('be.visible')
+            cy.wait(2000) // wait for 2 seconds
             cy.get(sstSurveyPO.sliderRightArrow2,{timeout:20000}).trigger("click")
-            cy.get(sstSurveyPO.imgSlides,{timeout:5000}).should('be.visible');
+            cy.get(sstSurveyPO.imgSlides).should('be.visible');
+            cy.wait(2000) // wait for 2 seconds
+            cy.get(sstSurveyPO.sliderRightArrow2).trigger("click")
+            cy.get(sstSurveyPO.imgSlides).should('be.visible');
+            cy.wait(2000) // wait for 2 seconds
             cy.get(sstSurveyPO.sliderRightArrow2,{timeout:20000}).trigger("click")
-            cy.get(sstSurveyPO.imgSlides,{timeout:5000}).should('be.visible');
+            cy.get(sstSurveyPO.imgSlides).should('be.visible');
+            cy.wait(2000) // wait for 2 seconds
             cy.get(sstSurveyPO.sliderRightArrow2,{timeout:20000}).trigger("click")
-            cy.get(sstSurveyPO.imgSlides,{timeout:5000}).should('be.visible');
-            cy.get(sstSurveyPO.sliderRightArrow2,{timeout:20000}).trigger("click")
-            //cy.get(sstSurveyPO.startSurveyBtn,{timeout:5000}).click();
+            cy.wait(2000) // wait for 2 seconds
+            cy.get(sstSurveyPO.startSurveyBtn,{timeout:5000}).click();
 
             //logout
-           // cy.get(sstSurveyPO.logoutBtn,{timeout:5000}).click();
+            cy.get(sstSurveyPO.logoutBtn,{timeout:10000}).click();
         studId++;
         })
         sid++;

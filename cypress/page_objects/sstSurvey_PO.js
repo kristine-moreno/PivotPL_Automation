@@ -15,7 +15,7 @@ export const sstSurveyPO = {
     sliderRightArrow:'[data-testid="onboarding-slider-right-arrow"] > .sc-15fa221-0 > img',
     sliderRightArrow2:'[data-testid="onboarding-slider-right-arrow"] > .sc-15fa221-0 > img',
     imgSlides:'.slick-active > :nth-child(1) > div > img',
-    startSurveyBtn:'[data-testid="app-button"]',
+    startSurveyBtn:'[data-testid="start-survey-button"]',
     
     //SST Survey Elements
     studentName:'.ewzZu',
