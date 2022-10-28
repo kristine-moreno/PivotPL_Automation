@@ -7,7 +7,7 @@ const studentId = require('../../fixtures/studentsData/closeSurveyStudent.json')
 
 const configs = Cypress.env();
 
-Given('I access to the provided survey link', () => { 
+Given('I access to the provided scheduled survey link', () => { 
     cy.visit(configs.env.sstLogin);
 })
 
@@ -40,11 +40,13 @@ When('I login my valid survey_id and student_id', () => {
             cy.get(schedSurvey.notAvailableLogout,{timeout:5000}).should('be.visible');
             cy.log("Elements are available")
 
+            cy.wait(2000);
             //click logout button
             cy.get(schedSurvey.notAvailableLogout,{timeout:5000}).contains("Log out").click();
             cy.log("Then I should be navigated to the Survey Not Available page");
             cy.log("And all elements should be properly displayed");
 
+            cy.wait(2000);
             //checking Login selection elements
             cy.log("And I should be able to log out my account");
             cy.get(loginSelectionPO.loginSelectpivotLogo,{timeout:5000}).should('be.visible');
