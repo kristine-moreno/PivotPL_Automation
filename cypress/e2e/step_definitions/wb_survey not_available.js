@@ -3,7 +3,7 @@ import { wbloginPO } from "../../page_objects/wbLogin_PO";
 import { loginSelectionPO } from "../../page_objects/loginSelection_PO";
 import { schedSurvey } from "../../page_objects/schedSurvey_PO";
 const surveyId = require('../../fixtures/surveyLink/survey_scheduled.json')
-const studentId = require('../../fixtures/studentsData/Student.json')
+const studentId = require('../../fixtures/studentsData/StudentLevel2.json')
 
 const configs = Cypress.env();
 
