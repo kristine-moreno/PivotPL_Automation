@@ -148,8 +148,11 @@ When('Students Level 2 login valid student id', () => {
             cy.get(sstSurveyPO.sst_question_25).should('be.visible').contains("My teacher makes changes in response to my feedback");
             cy.get(sstSurveyPO.radio_q25_response).children()
             .eq(Math.floor(Math.random() * 6))
-            .click({force: true});          
+            .click({force: true});    
             
+            cy.wait(2000) // wait for 2 seconds
+            cy.get(sstSurveyPO.submitBtn).click({force: true});    
+            cy.wait(2000) // wait for 2 seconds
             //logout
             cy.get(sstSurveyPO.logoutBtn,{timeout:10000}).click();
         studId++;

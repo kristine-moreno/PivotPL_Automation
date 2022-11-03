@@ -150,6 +150,9 @@ When('Students Level 3 login valid student id', () => {
             .eq(Math.floor(Math.random() * 6))
             .click({force: true});          
             
+            cy.wait(2000) // wait for 2 seconds
+            cy.get(sstSurveyPO.submitBtn).click({force: true});    
+            cy.wait(2000) // wait for 2 seconds
             //logout
             cy.get(sstSurveyPO.logoutBtn,{timeout:10000}).click();
             cy.wait(2000) // wait for 2 seconds

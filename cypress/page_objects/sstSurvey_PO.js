@@ -70,8 +70,25 @@ export const sstSurveyPO = {
     radio_q23_response:'#sst-question-23-response',
     radio_q24_response:'#sst-question-24-response',
     radio_q25_response:'#sst-question-25-response',
-    submitBtn:'[data-testid="app-button"]',
+    submitBtn:'#submit-button',
+
+    student_name:'#student-name',
+    level1_sst_question:'.sc-mfv47r-0',
+    level1_sst_response:'.sc-1nk2rwz-0',
+    nextBtn:'[data-testid="app-button"]',
+    childNextBtn:'.sc-mfv47r-0',
+    goBackBtn:'',
+    submitSurvey:'.sc-mfv47r-0',
+    audioBtn:'',
+    modal_Logout:'#logout-confirm',
+    modal_ResumeSurvey:'#logout-cancel',
+    
 
     //Thank You Page Elements
+    thankyouTitle:'#thank-you-title', //You are finished!
+    thankyouSubtitle:'#thank-you-subtitle', //Thank you for your feedback.
+    thankyouIcon:'#thank-you-image',
+    thankyouFooter:'#thank-you-footer',
+    thankyouLogout:'#logout-button',
     logoutBtn:'.sc-1tfore2-5'
 }
