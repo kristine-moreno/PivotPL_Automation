@@ -150,11 +150,17 @@ When('Students Level 2 login valid student id', () => {
             .eq(Math.floor(Math.random() * 6))
             .click({force: true});    
             
-            cy.wait(2000) // wait for 2 seconds
-            cy.get(sstSurveyPO.submitBtn).click({force: true});    
-            cy.wait(2000) // wait for 2 seconds
-            //logout
+            cy.wait(5000) // wait for 5 seconds
+            //Thank you
+            cy.get(sstSurveyPO.thankyouTitle).should('be.visible').contains("You are finished!");
+            cy.get(sstSurveyPO.thankyouSubtitle).should('be.visible').contains("Thank you for your feedback.");
+            cy.get(sstSurveyPO.thankyouIcon).should('be.visible');
+            cy.get(sstSurveyPO.thankyouFooter).should('be.visible').contains("Your teacher will let you know what happens next");            
+
+            cy.wait(5000) // wait for 5 seconds
+            //Logout
             cy.get(sstSurveyPO.logoutBtn,{timeout:10000}).click();
+            //cy.get(sstSurveyPO.modal_Logout,{timeout:10000}).click();
         studId++;
         })
         sid++;
