@@ -1,63 +1,7 @@
 [
 
    {
-     "Teacher": {
-        "Leader": "kale cliffe"
-     },
-     "Class": "SS-002",
-     "Department": "Sciences",
-     "Member count": 10,
-     "surveyLink": "https://staging.survey.pivotpl.com/login/sst/QRESY",
-     "Response count": 0
-  },
-   {
-     "Teacher": {
-        "Leader": "irvine choak"
-     },
-     "Class": "IT-001",
-     "Department": "IT",
-     "Member count": 10,
-     "surveyLink": "https://staging.survey.pivotpl.com/login/sst/WACQU",
-     "Response count": 0
-  },
-   {
-     "Teacher": {
-        "Leader": "julienne philipps"
-     },
-     "Class": "MM-002",
-     "Department": "Marketing",
-     "Member count": 10,
-     "surveyLink": "https://staging.survey.pivotpl.com/login/sst/CEJMR",
-     "Response count": 0
-  },
-   {
-     "Teacher": {
-        "Leader": "abagael carus"
-     },
-     "Class": "IT-003",
-     "Department": "IT",
-     "Member count": 10,
-     "surveyLink": "https://staging.survey.pivotpl.com/login/sst/DYYZK",
-     "Response count": 0
-  },
-   {
-     "Teacher": {
-        "Leader": "serena fullicks"
-     },
-     "Class": "SS-003",
-     "Department": "Sciences",
-     "Member count": 10,
-     "surveyLink": "https://staging.survey.pivotpl.com/login/sst/HKHDG",
-     "Response count": 0
-  },
-   {
-     "Teacher": {
-        "Leader": "natala headech"
-     },
-     "Class": "MM-003",
-     "Department": "Marketing",
-     "Member count": 10,
-     "surveyLink": "https://staging.survey.pivotpl.com/login/sst/QQBNV",
-     "Response count": 0
-  }
+     "surveyLink": "https://staging.survey.pivotpl.com/login/sst/DKZFK"
+   } 
+
   ]

@@ -6,9 +6,9 @@ const studentId = require('../../fixtures/studentsData/StudentLevel3.json')
 
 const configs = Cypress.env();
 
-Given('Students Level 3 access the provided survey link', () => { 
-    cy.visit(configs.env.sstLogin);
-});
+// Given('I have access  Student Survey on Teaching login page', () => { 
+//     cy.visit(configs.env.sstLogin);
+// });
 
 When('Students Level 3 login valid student id', () => {
     let sid = 0;
@@ -168,22 +168,5 @@ When('Students Level 3 login valid student id', () => {
     })
 })
 
-When(' Students Level 3 have navigated to the onboarding page',()=>{
-    cy.log('I have navigated to the onboarding page')
-})
 
-When('Students Level 3 start answering all survey questions', () => { 
-    cy.log('I start answering all survey questions')
-})
 
-When('Students Level 3 click submit button',()=>{
-    cy.log('I click submit button')
-})
-
-When('Students Level 3 should be able to submit answers to the survey', () => {
-    cy.log('I should be able to submit my answers to the survey')
-})
-
-Then('Students Level 3 be navigated to the Thank you page',()=>{
-    cy.log('be navigated to the Thank you page')
-})
