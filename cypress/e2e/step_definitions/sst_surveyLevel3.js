@@ -27,7 +27,7 @@ When('Students Level 3 login valid student id', () => {
             //onboarding
 
             cy.wait(10000) // wait for 5 seconds
-            cy.get(sstSurveyPO.greetings,{timeout:10000}).should('be.visible');
+            cy.get(sstSurveyPO.greetings).should('be.visible');
             cy.get(sstSurveyPO.feedbackSubtext,{timeout:5000}).should('be.visible');
             cy.get(sstSurveyPO.subtext,{timeout:5000}).should('be.visible');
             cy.get(sstSurveyPO.imgSlides,{timeout:5000}).should('be.visible');
@@ -44,8 +44,8 @@ When('Students Level 3 login valid student id', () => {
             cy.get(sstSurveyPO.imgSlides).should('be.visible');
             cy.wait(2000) // wait for 2 seconds
             cy.get(sstSurveyPO.sliderRightArrow2,{timeout:20000}).trigger("click")
-            cy.wait(2000) // wait for 2 seconds
-            cy.get(sstSurveyPO.startSurveyBtn,{timeout:5000}).click({force: true});
+            cy.wait(5000) // wait for 2 seconds
+            cy.get(sstSurveyPO.startSurveyBtn).click({force: true});
 
             //survey questions
             cy.wait(5000) // wait for 5 seconds
@@ -148,7 +148,8 @@ When('Students Level 3 login valid student id', () => {
             cy.get(sstSurveyPO.sst_question_25).should('be.visible').contains("This teacher makes changes in response to my feedback");
             cy.get(sstSurveyPO.radio_q25_response).children()
             .eq(Math.floor(Math.random() * 6))
-            .click({force: true});          
+            .click({force: true});
+            cy.get(sstSurveyPO.submitBtn).click({force: true});          
             
             cy.wait(5000) // wait for 5 seconds
             //Thank you
