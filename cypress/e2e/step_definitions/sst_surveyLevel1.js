@@ -32,56 +32,56 @@ When('Students Level 1 login valid student id', () => {
           
             //survey questions
             cy.wait(5000) // wait for 5 seconds
-            cy.get(sstSurveyPO.level1_sst_question).should('be.visible').contains("Does your teacher help you focus on learning?");
-            cy.get(sstSurveyPO.level1_sst_response).children()
+            cy.get(sstSurveyPO.level1_sst_question1).should('be.visible').contains("Does your teacher help you focus on learning?");
+            cy.get(sstSurveyPO.level1_sst_response1).children()
             .eq(Math.floor(Math.random() * 3))
             .click({force: true});
             cy.get(sstSurveyPO.nextBtn).click({force: true});
 
-            cy.get(sstSurveyPO.level1_sst_question).should('be.visible').contains("Does your teacher show you how to behave in class?");
-            cy.get(sstSurveyPO.level1_sst_response).children()
+            cy.get(sstSurveyPO.level1_sst_question2).should('be.visible').contains("Does your teacher show you how to behave in class?");
+            cy.get(sstSurveyPO.level1_sst_response2).children()
             .eq(Math.floor(Math.random() * 3))
             .click({force: true});
             cy.get(sstSurveyPO.nextBtn).contains('Next').click({force: true});
             
-            cy.get(sstSurveyPO.level1_sst_question).should('be.visible').contains("Does your teacher make learning exciting?");
-            cy.get(sstSurveyPO.level1_sst_response).children()
+            cy.get(sstSurveyPO.level1_sst_question3).should('be.visible').contains("Does your teacher make learning exciting?");
+            cy.get(sstSurveyPO.level1_sst_response3).children()
             .eq(Math.floor(Math.random() * 3))
             .click({force: true});
             cy.get(sstSurveyPO.nextBtn).contains('Next').click({force: true});
 
-            cy.get(sstSurveyPO.level1_sst_question).should('be.visible').contains("Do you set goals that help you learn?");
-            cy.get(sstSurveyPO.level1_sst_response).children()
+            cy.get(sstSurveyPO.level1_sst_question4).should('be.visible').contains("Do you set goals that help you learn?");
+            cy.get(sstSurveyPO.level1_sst_response4).children()
             .eq(Math.floor(Math.random() * 3))
             .click({force: true});
             cy.get(sstSurveyPO.nextBtn).contains('Next').click({force: true});
 
-            cy.get(sstSurveyPO.level1_sst_question).should('be.visible').contains("Does your teacher give you time to think when you need it?");
-            cy.get(sstSurveyPO.level1_sst_response).children()
+            cy.get(sstSurveyPO.level1_sst_question5).should('be.visible').contains("Does your teacher give you time to think when you need it?");
+            cy.get(sstSurveyPO.level1_sst_response5).children()
             .eq(Math.floor(Math.random() * 3))
             .click({force: true});
             cy.get(sstSurveyPO.nextBtn).contains('Next').click({force: true});
 
-            cy.get(sstSurveyPO.level1_sst_question).should('be.visible').contains("Does your teacher show you how to make your work better?");
-            cy.get(sstSurveyPO.level1_sst_response).children()
+            cy.get(sstSurveyPO.level1_sst_question6).should('be.visible').contains("Does your teacher show you how to make your work better?");
+            cy.get(sstSurveyPO.level1_sst_response6).children()
             .eq(Math.floor(Math.random() * 3))
             .click({force: true});
             cy.get(sstSurveyPO.nextBtn).contains('Next').click({force: true});
 
-            cy.get(sstSurveyPO.level1_sst_question).should('be.visible').contains("Does it feel okay to ask your teacher for help?");
-            cy.get(sstSurveyPO.level1_sst_response).children()
+            cy.get(sstSurveyPO.level1_sst_question7).should('be.visible').contains("Does it feel okay to ask your teacher for help?");
+            cy.get(sstSurveyPO.level1_sst_response7).children()
             .eq(Math.floor(Math.random() * 3))
             .click({force: true});
             cy.get(sstSurveyPO.nextBtn).contains('Next').click({force: true});
 
-            cy.get(sstSurveyPO.level1_sst_question).should('be.visible').contains("Does your teacher care about you?");
-            cy.get(sstSurveyPO.level1_sst_response).children()
+            cy.get(sstSurveyPO.level1_sst_question8).should('be.visible').contains("Does your teacher care about you?");
+            cy.get(sstSurveyPO.level1_sst_response8).children()
             .eq(Math.floor(Math.random() * 3))
             .click({force: true});
             cy.get(sstSurveyPO.nextBtn).contains('Next').click({force: true});
 
-            cy.get(sstSurveyPO.level1_sst_question).should('be.visible').contains("Does your teacher ask you to share your ideas?");
-            cy.get(sstSurveyPO.level1_sst_response).children()
+            cy.get(sstSurveyPO.level1_sst_question9).should('be.visible').contains("Does your teacher ask you to share your ideas?");
+            cy.get(sstSurveyPO.level1_sst_response9).children()
             .eq(Math.floor(Math.random() * 3))
             .click({force: true});
             cy.get(sstSurveyPO.submitSurvey).contains('Submit').click({force: true});
